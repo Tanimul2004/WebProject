@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Webite designt</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Handlee&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/2db41c2dd8.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark fa " onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
+            </nav>
+            <h1>About US</h1>
+
+        </section>
+        <!-- --------------About US Content----------------- -->
+        <div class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the World Largest University</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut consectetur iusto cum adipisci sapiente, quisquam culpa commodi maiores a perferendis nulla! In, nemo sapiente quae voluptatem officiis exercitationem inventore.</p>
+                    <a href="" class="hero-btn red-btn" >Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quisquam, quod.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f fa"></i>
+                <i class="fa-brands fa-twitter fa"></i>
+                <i class="fa-brands fa-instagram fa"></i>
+                <i class="fa-brands fa-linkedin-in fa"></i>
+            </div>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Tanimul Hasan </p>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
